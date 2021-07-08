@@ -16,7 +16,7 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Welcome to Nerajima',
+              'Welcome to Random UIs',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),

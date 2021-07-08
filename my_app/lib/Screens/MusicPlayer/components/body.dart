@@ -10,6 +10,7 @@ class MusicPlayerBody extends StatefulWidget {
 
 class _MusicPlayerBodyState extends State<MusicPlayerBody> {
   bool favoriteHeart = false;
+  bool isPlaying = true;
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -124,9 +125,13 @@ class _MusicPlayerBodyState extends State<MusicPlayerBody> {
                         ),
                         IconButton(
                           iconSize: 70.0,
-                          onPressed: () {},
+                          onPressed: () {
+                            setState(() {
+                              this.isPlaying = !this.isPlaying;
+                            });
+                          },
                           icon: Icon(
-                            Icons.pause,
+                            this.isPlaying ? Icons.pause : Icons.play_arrow,
                             color: Colors.white,
                           ),
                         ),
