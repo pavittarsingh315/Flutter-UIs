@@ -17,3 +17,8 @@
 1. Created a custom appbar which is transparent and allows a user to navigate back to home page.
 2. Made some UI touch ups like change icon on music player pause and play button on clicks.
 3. Changed title on welcome page
+
+## Fifth Commit
+
+1. Added Sign Up page UI.
+2. Created proper navigation between login screen and register screen.

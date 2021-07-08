@@ -4,6 +4,7 @@ import 'package:my_app/Screens/Login/components/already_have_an_account_check.da
 import 'package:my_app/Screens/Login/components/background.dart';
 import 'package:my_app/Screens/Login/components/rounded_input_field.dart';
 import 'package:my_app/Screens/Login/components/rounded_password_field.dart';
+import 'package:my_app/Screens/SignUp/signup_screen.dart';
 import 'package:my_app/components/rounded_button.dart';
 
 class Body extends StatelessWidget {
@@ -44,7 +45,12 @@ class Body extends StatelessWidget {
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(
               press: () {
-                print('Navigate to sign up page');
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => SignUpScreen(),
+                  ),
+                );
               },
             )
           ],
