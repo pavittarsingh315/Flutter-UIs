@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:my_app/Screens/Login/login_screen.dart';
+import 'package:my_app/Screens/MusicPlayer/musicPlayer.dart';
 import 'package:my_app/Screens/Welcome/components/background.dart';
 import 'package:my_app/components/rounded_button.dart';
 import 'package:my_app/constants.dart';
@@ -42,11 +43,16 @@ class Body extends StatelessWidget {
               },
             ),
             RoundedButton(
-              text: "SIGNUP",
+              text: "MUSIC PLAYER",
               press: () {
-                print('Hello World');
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MusicPlayer(),
+                  ),
+                );
               },
-              color: kPrimaryLightColor,
+              color: musicPlayerGradient2,
             ),
           ],
         ),

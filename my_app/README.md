@@ -7,3 +7,7 @@
 ## Second Commit
 
 1. Created a login page UI.
+
+## Third Commit
+
+1. Created a Music Player Ui
