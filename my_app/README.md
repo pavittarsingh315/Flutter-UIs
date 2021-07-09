@@ -22,3 +22,7 @@
 
 1. Added Sign Up page UI.
 2. Created proper navigation between login screen and register screen.
+
+## Sixth Commit
+
+1. Created a simple form with validation

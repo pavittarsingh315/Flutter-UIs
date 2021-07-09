@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:my_app/Screens/FormValidation/formValidation.dart';
 import 'package:my_app/Screens/Login/login_screen.dart';
 import 'package:my_app/Screens/MusicPlayer/musicPlayer.dart';
 import 'package:my_app/Screens/SignUp/signup_screen.dart';
@@ -66,6 +67,18 @@ class Body extends StatelessWidget {
                 );
               },
               color: musicPlayerGradient2,
+            ),
+            RoundedButton(
+              text: "FORM VALIDATION",
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => FormBody(),
+                  ),
+                );
+              },
+              color: Colors.red,
             ),
           ],
         ),

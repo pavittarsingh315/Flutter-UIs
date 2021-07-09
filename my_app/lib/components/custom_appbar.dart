@@ -3,7 +3,12 @@ import 'package:my_app/constants.dart';
 
 class CustomAppBar extends StatelessWidget {
   final Widget child;
-  const CustomAppBar({Key? key, required this.child}) : super(key: key);
+  final Color arrowColor;
+  const CustomAppBar({
+    Key? key,
+    required this.child,
+    required this.arrowColor,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +25,7 @@ class CustomAppBar extends StatelessWidget {
               splashColor: Colors.transparent,
               icon: Icon(
                 Icons.arrow_back_ios_new_rounded,
-                color: kPrimaryColor,
+                color: this.arrowColor,
               ),
               onPressed: () {
                 Navigator.of(context).pop();
